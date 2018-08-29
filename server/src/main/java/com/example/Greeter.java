@@ -22,6 +22,7 @@ public class Greeter {
  * @return A string data type
  */
   public String greet(final String someone) {
-    return String.format("Hello, %s!", someone);
+    return null;
+	  //return String.format("Hello, %s!", someone);
   }
 }
