@@ -18,10 +18,9 @@ public class Greeter {
 /**
  * method to greet
  * @author nagayacr
- * @param String someone name
+ * @param someone name
  * @return A string data type
  */
-  
   public String greet(final String someone) {
     return String.format("Hello, %s!", someone);
   }
