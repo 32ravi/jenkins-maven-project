@@ -5,9 +5,6 @@ pipeline {
         my_tag = "${env.GIT_COMMIT}".substring(0,6)
         //my_tag = my_tag
     }
-     
-    
-
     stages{
         stage('Build'){
             steps{
@@ -15,7 +12,6 @@ pipeline {
                 sh "docker build . -t tomcatwebapp:${env.BUILD_ID}"
                 sh "echo ${my_tag}"
             }
-
         }
     }
 }
